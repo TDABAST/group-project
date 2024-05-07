@@ -1,0 +1,768 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Hind Siliguri", sans-serif;
+}
+body{
+    background:black;
+    background: url('dyson_1.jpg') no-repeat;
+    background-size: cover;
+    
+    
+}
+.header{
+             position:relative;
+             top:0;
+             left:5px;
+             width:100%;
+             padding: 18px 12.5px; 
+             display:flex;
+             justify-content: space-between;
+             align-items:center;
+             margin:0;
+             background: transparent;
+             
+            
+         
+      }
+   
+
+           ul {
+            list-style: none;
+            padding: 0;
+          }
+          
+          li {
+            display: inline-block;
+            margin-right: 20px;
+          }
+          
+          li a {
+            position: relative;
+            text-decoration: none;
+            color: #fff;
+            font-weight:bold;
+            margin-right: 10px;
+            
+          }
+
+          
+       
+          li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 100%;
+            height: 2px;
+            transform: translateY(10px); /* Initial position outside */
+            opacity: 0;
+            transition: 0.6s ease;
+            border-radius: 3px;
+            background: wheat;
+          }
+          
+          li a:hover::after {
+            transform: translateY(0); /* Move to zero position */
+            opacity: 1;
+          }
+          .searching-bar input{
+          width:100%;
+          border:none;
+          background:transparent;
+          outline:none;
+          padding: 5px;
+          color:white;
+          font-weight:bold;
+          font-size:16px;
+          
+          
+          
+          }
+
+          .searching-bar{
+            width: 200px;
+            height:45px;
+            background:transparent;
+            display:flex;
+            border: 2px solid white;
+            align-items:center;
+           
+          }
+
+          .searching-bar input::placeholder{
+            color:#fff;
+          }
+          
+         .searching-bar button{
+            background:transparent;
+            height:42px;
+            width: 40px;
+            border:none;
+            outline:none;
+            display:flex;
+            align-items:center;
+            cursor:pointer;
+         }
+         .searching-bar button i{
+         font-size:30px;
+         color:#fff;
+         }
+
+         .container{
+            
+            
+     position:absolute;
+      top:70px;
+      left: 60px;
+      right:60px;
+      bottom:0px;
+      
+      max-width: 100%;
+      max-height: 100%;
+   
+            /*background: url('https://insideretail.asia/wp-content/uploads/2021/01/F-Dyson-Demo-in-Korea.jpeg') no-repeat; */
+            background: url('dyson_1.jpg') no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+           
+         }
+     .container .dyson_intro{
+        position: absolute;
+        top:0;
+        left:0%;
+    width:50%;
+    height:100%;
+    background: transparent;
+
+         }
+
+    .container .login{
+        position: absolute;
+        top:0;
+        left:52%;
+        width: calc(100% - 50%);
+        height: 100%;
+        background:transparent;
+
+
+    }
+    .dyson_intro h2,h3{
+      padding:5px;
+      text-align:center;
+      margin:60px 80px 20px 40px;
+      color:#fff;
+      font-size: 30px;
+      -webkit-text-stroke-width: 2px; /* Width of the border */
+-webkit-text-stroke-color: black; /* Color of the border */
+
+  }
+
+    #dyson1{
+        text-align: center;
+        font-size: 40px;
+        width: 100px;
+  height: 50px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  animation: moveBackAndForth 5s linear infinite;
+        
+    }
+    .social_icons{
+        display:flex;
+        justify-content: center;
+        
+    }
+
+    .social_icons a i{
+        font-size:30px;
+        margin-left: 20px;
+        color:#fff; 
+        transition: 0.5s ease;
+      }
+
+    .social_icons a:hover i{
+        transform: scale(1.2);
+    }
+    @keyframes moveBackAndForth {
+        0% {
+          left: 0;
+        }
+        50% {
+          left: 60%; /* Move 200px to the right */
+        }
+        100% {
+          left: 0; /* Back to the starting position */
+        }
+      }
+
+      .login {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+       
+        width:100%;
+        height:100%;
+        backdrop-filter:blur(20px);
+        background:transparent;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: #fff;
+        position:absolute;
+        overflow: hidden;
+
+}
+
+.login_form h2,.registration_form h2,.set_password_form h2{
+    font-size:30px;
+    padding-bottom: 9px;
+    text-align: center;
+
+}
+
+ .input-box,.log-box1{
+    position:relative;
+    width:354px;
+    height:45px;
+    border-bottom:2px solid #fff;
+    margin:15px 0;
+    font-size:14px;
+    font-weight:400;
+}
+
+
+
+#type input{
+    margin-left: 10px;
+       
+}
+
+.input-box input{
+    
+    
+    background:transparent;
+    border:none;
+    outline:none;
+    color: wheat;
+    font-size: 14px;
+    font-weight: 4px;
+    padding-right:20px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right:0;
+    font-size:19px;
+}
+
+.input-box label{
+    position:absolute;
+    top: -2px;
+    left:0;
+    transform:translateY(-50%);
+    
+    transition:.5s ease;
+    pointer-events: none;
+    
+
+}
+.input-box input:focus~label,.input-box input:valid~label
+{
+    top: -6px;
+}
+
+
+.Submit_btn {
+    height:45px;
+    width:110%;
+    background:#2F4F4F;
+    outline: none;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+    font-size:16px;
+    color:#fff;
+    font-weight:900;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    
+}
+.forgot-password {
+    margin:-5px 0 15px;
+    
+}
+.registration-link,.login-link,.terms,.setpassword-link{
+    margin-bottom: 10px;
+}
+
+.forgot-password a,.registration-link a,.login-link a,.terms a,.setpassword-link a{
+    text-decoration: none;
+    color:#fff;
+    font-style:oblique;
+    
+    
+}
+
+
+    
+
+
+.forgot-password:hover a,.registration-link:hover a,.login-link:hover a,.terms:hover a,.setpassword-link:hover a{
+    border-bottom:1px solid #fff;
+}
+
+.login .registration_form {
+    transform: translateX(300%);
+    transition: transform .5s ease;
+}
+
+.login.active .registration_form {
+  transform: translateX(0%);
+  transition-delay: .7s;
+}
+
+
+.login.active1 .registration_form {
+  transform: translateX(300%);
+  transition: transform .5s ease;
+}
+.login .login_form {
+    transform: translateX(80%);
+    transition: transform .6s ease;
+}
+
+.login.active .login_form {
+  transform: translateX(300%);
+  transition-delay: 0s;
+} 
+.login.active1 .login_form {
+  transform: translateX(300%);
+  transition-delay: 0s;
+} 
+
+
+.login .set_password_form{
+  transform:translateX(100%);
+  transition:transform .5s ease;
+}
+
+.login.active .set_password_form{
+  transform:translateX(100%);
+  transition:transform .5s ease;
+}
+
+.login.active1 .set_password_form{
+  transform: translateX(-100%);
+    transition-delay: .7s;
+}
+
+.employee_dashboard h1,.Manager_dashboard h1,.Customer_dashboard h1{
+    color:white;
+    text-align: center;
+}
+
+
+
+.container2,.container3 {
+    top:180px;
+    left:250px;
+    right:250px;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px; /* Adjust the gap between items */
+    text-align: center;
+  }
+
+  .container4{
+    top:300px;
+    left:200px;
+    right:200px;
+    position:absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px; /* Adjust the gap between items */
+    text-align: center;
+
+  }
+
+  .Product a img,.Product1 a img {
+
+   width:50%;
+   height:150px;
+   border-radius: 10px;
+   transform: scale3d(1, 1, 1);
+   box-shadow: 0 0 20px grey; 
+   transition: .5s ease;
+
+  }
+  
+  .Product2 a img{
+
+    width:70%;
+    height:150px;
+    border-radius: 10px;
+    transform: scale3d(1, 1, 1);
+    box-shadow: 0 0 20px grey; 
+    transition: .5s ease;
+
+  }
+  
+  
+  .Product a img:hover,.Product1 a img:hover,.Product2 a img:hover{
+     /* Scale the image on hover */
+     transform: scale3d(1.2,1.2,1.2);
+    box-shadow: 0 0 20px rgba(255,255,255); 
+  }
+
+  .container2 .Product p,.container3 .Product1 p{
+
+    
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    padding:15px;
+    
+ }
+
+ .container4 .Product2 p{
+
+   
+    text-decoration: none;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    padding:15px;
+    
+ }
+ 
+.bulkdiscount, .rnr{
+    margin:0px;
+    left:0px;
+    background-color: black; /* Choose your desired background color */
+    color: white; /* Set text color to contrast with background */
+    text-align: center;
+    padding: 1px 0;
+    position: fixed; /* or position: absolute; */
+    bottom: 10px;
+    width: 100%;
+    height:40px;
+    
+
+    
+    
+  }
+
+ 
+
+  .bulkdiscount a,.rnr a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+ 
+    text-shadow: 0 0 20px grey;
+    /*position: left; */
+ 
+  }
+ /* 
+  .bulkdiscount:hover a,.rnr:hover a {
+    
+    box-shadow: 0 0 20px grey;} *//* Adjusted box-shadow color and opacity */
+  
+
+    .bulkdiscount a::after,.rnr a::after{
+    
+    content:'';
+    position:absolute;
+background:transparent;
+    transform:translateY(10px);
+    opacity:0;
+    transition: 0.5s ease;
+    left: 40%;
+    right:50%;
+    bottom: 5px;
+    width: 20%;
+    height: 3px;
+    background: white;
+   
+  }
+
+  .bulkdiscount a:hover::after,.rnr a:hover::after{
+
+    transform:translateY(0px);
+    opacity:1;
+  }
+ .about,.return{
+    display:grid;;
+    grid-template-columns: 1fr 1fr;
+    background:transparent;
+    margin:90px;
+    text-align:center;
+    gap:100px;
+ }
+.objective{
+    background:transparent;
+    color:white;
+    text-align: center;
+    top:15px;
+    padding:30px;
+    
+}
+
+
+ 
+
+ .aboutus,.ReturnnRefund{
+    color:#fff;
+   text-align: center;
+   margin-top: 40px;
+   text-decoration: 2px underline;
+   text-shadow: 0 0 60px white;
+   background:transparent;
+
+ }
+
+ .About_Page button,.returnpage button{
+    top:200px;
+    display:inline;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom:40px;
+    background: transparent;
+    color:white;
+    border-radius: 15px;
+    text-shadow: 0 0 40px white;
+    cursor:pointer;
+    font-size: 20px;
+    border: #2F4F4F 2px solid;
+    
+    
+ }
+
+ #bp1,#bp2,#bp3,#bp4{
+    color:white;
+    padding :20px;
+ }
+
+ .dyson_logo{
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    background:url(1.jpeg) no-repeat;
+    background-position: center;
+    background-size: 500px;
+    animation: slide 20s infinite;
+    border-radius: 20px;
+    
+    
+    
+ }
+
+
+@keyframes slide{
+    25%{
+        background:url(1.jpeg) no-repeat;
+        box-shadow: 0 0 20px rgba(255,255,255); 
+        background-position: center;
+        
+    background-size: 500px;
+    }
+    50%{
+        background:url(2.jpeg) no-repeat;
+        box-shadow: 0 0 20px rgba(255,255,255); 
+        background-position: center;
+    background-size: 500px;
+    }
+    75%{
+        background:url(3.jpeg) no-repeat;
+        box-shadow: 0 0 20px rgba(255,255,255); 
+        background-position: center;
+    background-size: 500px;
+    }
+    100%{
+        background:url(4.jpeg)no-repeat;
+        box-shadow: 0 0 20px rgba(255,255,255); 
+        background-position: center;
+    background-size: 500px;
+    }
+}
+
+.contact {
+    text-align: center;
+    color:white;
+    top: 50px;
+    margin:60px;
+    text-decoration: underline;
+  
+}
+
+  
+
+.contact1  {
+    
+   
+    background:transparent;
+    text-align: center;
+    color:white;
+    font-size: 16px;
+
+}
+.termsnconditions,.Services{
+  color:white;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.terms1 p,.service1 p{
+  color:white;
+  text-align: center;
+  top:20px;
+  font-size: 20px;
+}
+.terms2 h3,.service2 h3{
+  color:white;
+  text-align: left;
+  top:20px;
+  font-size: 20px;
+  padding-bottom: 10px; 
+  margin:10px;
+  font-size:25px;
+
+}
+
+.terms2,.service2 {
+
+  color:white;
+  text-align: left;
+  top:20px;
+  font-size: 16px;
+  margin:10px;
+  background: transparent;
+  padding-left:10px; 
+  
+}
+
+.terms3 {
+
+  color:white;
+  text-align: center;
+  top:30px;
+  font-size: 20px;
+  margin:20px;
+  background: transparent;
+  text-decoration: underline;
+ 
+}
+
+.service3 {
+
+  color:white;
+  text-align: left;
+  top:30px;
+  font-size: 20px;
+  margin:80px;
+  background: transparent;
+  font-weight: bold;
+  
+}
+
+.replace_form,.recycle_form,.refund_form,.product_log_form,.product_catalog_form{
+  display:flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+        width:40%;
+        height:100%;
+        backdrop-filter:blur(20px);
+        background:transparent;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        color: #fff;
+        position:absolute;
+        
+        margin-top:-70px;
+        margin-left:400px;
+  
+}
+
+.replace_form h2,.recycle_form h2,.refund_form h2,.product_log_form h2,.product_catalog_form h2{
+  font-size:30px;
+  padding-bottom: 15px;
+  text-align: center;
+
+}
+
+.replace-box,.recycle-box,.refund-box,.log-box,.catalog-box{
+  
+  position:relative;
+  width:354px;
+  height:30px;
+  border-bottom:2px solid #fff;
+  margin:50px 0;
+  font-size:14px;
+  font-weight:400;
+}
+
+
+
+
+
+
+.replace-box input,.recycle-box input,.refund-box input,.log-box input,.catalog-box input{
+  
+  
+  background:transparent;
+  border:none;
+  outline:none;
+  color: wheat;
+  font-size: 14px;
+  font-weight: 4px;
+  padding-right:20px;
+  padding-bottom: 20px;
+ 
+}
+.replace-box .icon,.recycle-box .icon,.refund-box .icon,.log-box .icon,.catalog-box .icon{
+  position: absolute;
+  top: -40px;
+  right:250px;
+  font-size:30px;
+  
+}
+
+.replace-box label,.recycle-box label,.refund-box label,.log-box label,.catalog-box label{
+  position:absolute;
+  top: 0px;
+  left:0;
+  transform:translateY(-50%);
+  bottom:-20px;
+  transition:.5s ease;
+  pointer-events: none;
+  
+
+}
+.replace-box input:focus~label,.replace-box input:valid~label,.recycle-box input:focus~label,.recycle-box input:valid~label,.refund-box input:focus~label,.refund-box input:valid~label,.log-box input:focus~label,.log-box input:valid~label
+{
+  top: -6px;
+}
+
+
+.replace_button,.recycle_button,.refund_button,.log_button,.catalog_button {
+  height:45px;
+  width:110%;
+  background:#2F4F4F;
+  outline: none;
+  border:none;
+  border-radius:4px;
+  cursor:pointer;
+  font-size:16px;
+  color:#fff;
+  font-weight:900;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  
+}

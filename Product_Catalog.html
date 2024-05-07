@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product_Catalog</title>
+    <link rel="icon" href="dyson_logo.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="product_catalog_form">
+        <form  action="#">
+            <h2>Product Catalog</h2>
+           
+                <div class="catalog-box">
+                    <span class="icon"><i class='bx bx-package'></i></span>
+                   
+                    <input type="number" required>
+                    <label>Orderid:</label> 
+        
+        </div>
+
+      
+
+        <div class="catalog-box">
+            <label for="recycle_item">Select the Item you want to recycle:</label>
+            <select id="recycle_items" name="recycle_Items">
+              <option value="Dyson V8 Absolute">Dyson V8 Absolute</option>
+              <option value="Dyson V10 Absolute">Dyson V10 Absolute</option>
+              <option value="Dyson V11 Torque Drive">Dyson V11 Torque Drive</option>
+              <option value="Dyson V15 Detect Absolute">Dyson V15 Detect Absolute</option>
+              <option value="Dyson Ball Animal 2">Dyson Ball Animal 2</option>
+              <option value="Dyson Cinetic Big Ball Animal">Dyson Cinetic Big Ball Animal</option>
+            </select>               
+                    <div class="catalog-box">
+                       
+                        <input type="text" required>
+                        <label>Power</label>
+            
+            </div>
+
+            <div class="catalog-box">
+                       
+                <input type="text" required>
+                <label>BatteryLife</label> 
+    
+    </div>
+
+    <div class="catalog-box">
+                       
+        <input type="text" required>
+        <label>NoiseLevel</label> 
+
+</div>
+
+    <div class="catalog-box">
+                       
+        <input type="text" required>
+        <label>Color:</label>
+
+</div>
+    
+        
+
+
+        
+                
+
+                    <div class="catalog-box1">
+                        <span id="type">
+                        <p> Type of Return:</p>
+                        <input id="type1" type="radio" required name="usertype" value="Replace"> Replace
+                         
+                        <input id="type2" type="radio" required name="usertype" value="Recycle"> Recycle
+                     
+                        <input  id="type3" type="radio" required name="usertype" value="Refund"> Refund
+                       
+                        </span> 
+            
+                    </div>
+            
+       
+        
+
+        <button type="submit" class="catalog_button">Submit Details</button>
+  
+        </form>
+        </div>
+      
+</body>
+</html>

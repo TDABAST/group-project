@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>refund_product</title>
+    <link rel="icon" href="dyson_logo.png">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="refund_form">
+        <form  action="#">
+            <h2>Return & Refund</h2>
+           
+                <div class="refund-box">
+                    <span class="icon"><i class='bx bx-package'></i></span>
+                   
+                    <input type="number" required>
+                    <label>Orderid:</label> 
+        
+        </div>
+
+
+        <div class="refund-box">
+            <label for="refund_item">Select the Item you want to refund:</label>
+            <select id="refund_items" name="refund_Items">
+              <option value="Dyson V8 Absolute">Dyson V8 Absolute</option>
+              <option value="Dyson V10 Absolute">Dyson V10 Absolute</option>
+              <option value="Dyson V11 Torque Drive">Dyson V11 Torque Drive</option>
+              <option value="Dyson V15 Detect Absolute">Dyson V15 Detect Absolute</option>
+              <option value="Dyson Ball Animal 2">Dyson Ball Animal 2</option>
+              <option value="Dyson Cinetic Big Ball Animal">Dyson Cinetic Big Ball Animal</option>
+            </select>
+        
+        <div class="refund-box">
+           
+                <input id="post_code" type="text" required>
+                <label>Post-Code:</label>    
+        </div>
+
+        <div class="refund-box">
+           
+            <input id="condition" type="checkbox" required>
+            <label>Agree to return item in original packaging with tag?</label>    
+        </div>
+
+
+        
+
+        <button type="submit" class="refund_button">Refund</button>
+  
+        </form>
+        </div>
+      
+</body>
+</html>
